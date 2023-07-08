@@ -12,10 +12,10 @@
   @apply bg-[#001c30] text-[#dafffb]
 }
 .header{
-  @apply text-[176b87]
+  @apply text-[#176b87]
 }
 .dark .header{
-  @apply text-[64ccc5]
+  @apply text-[#64ccc5]
 }
 .font{
   font-family: 'Pacifico', cursive;
