@@ -25,8 +25,8 @@ const Navbar = (props:any):JSX.Element =>{
   };
 
   const drawer = (
-    <div className="dark w-full h-full">
-    <div onClick={handleDrawerToggle}  className="bg text-center">
+    <div className="dark w-full h-screen m-0">
+    <div onClick={handleDrawerToggle}  className="bg h-full text-center">
       <Typography variant="h6" sx={{ my: 2 }} className="bg font">
         Adetonwa Richard
       </Typography>
@@ -47,7 +47,7 @@ const Navbar = (props:any):JSX.Element =>{
   const container = window !== undefined ? () => window.document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }} className="bg">
+    <Box sx={{ display: 'flex' }} className="bg dark">
       <CssBaseline />
       <AppBar component="nav" className="bg">
         <Toolbar className="bg">
@@ -77,7 +77,7 @@ const Navbar = (props:any):JSX.Element =>{
           </Box>
         </Toolbar>
       </AppBar>
-      <Box component="nav" className="bg">
+      <Box component="nav" className="bg m-0">
         <Drawer
           container={container}
           variant="temporary"
