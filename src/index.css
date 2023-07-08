@@ -11,10 +11,10 @@
 .dark .bg{
   @apply bg-[#001c30] text-[#dafffb]
 }
-.header{
+.heading{
   @apply text-[#176b87]
 }
-.dark .header{
+.dark .heading{
   @apply text-[#64ccc5]
 }
 .font{
