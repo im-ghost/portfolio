@@ -15,7 +15,7 @@ import {
 import { NavHashLink } from "react-router-hash-link"
 import * as React from "react"
 const drawerWidth = 240;
-const navItems = ['Home', 'About','Skills','Projects','Contact'];
+const navItems = ['Home', 'Likes','Skills','Projects','Contact'];
 const Navbar = (props:any):JSX.Element =>{
   
   const { window } = props;

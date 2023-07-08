@@ -28,7 +28,7 @@ import { SocialIcon } from "react-social-icons"
   return (
     <motion.div
     className="bg page"
-    id="#contact"
+    id="contact"
      initial={{ opacity: 0, translateY: -100}}
         whileInView={{ opacity: 1,translateY:0 }}
         exit ={{opacity: 0, translateY: -100 }}
