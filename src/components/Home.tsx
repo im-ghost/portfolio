@@ -17,7 +17,7 @@ const Home = () => {
         exit ={{opacity: 0, translateY: -100 }}
         transition={{ duration: 3, delay:0.5 }}
       >
-        <Typography variant="h4">
+        <Typography variant="h4" className="heading">
           Hi, my name is
         </Typography>
         <Typography variant="h1" className="font">
