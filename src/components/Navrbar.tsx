@@ -25,8 +25,9 @@ const Navbar = (props:any):JSX.Element =>{
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }} className="bg">
-      <Typography variant="h6" sx={{ my: 2 }} className="bg">
+    <div className="dark w-full h-full">
+    <div onClick={handleDrawerToggle}  className="bg text-center">
+      <Typography variant="h6" sx={{ my: 2 }} className="bg font">
         Adetonwa Richard
       </Typography>
       <Divider />
@@ -39,7 +40,8 @@ const Navbar = (props:any):JSX.Element =>{
           </ListItem>
         ))}
       </List>
-    </Box>
+    </div>
+    </div>
   );
 
   const container = window !== undefined ? () => window.document.body : undefined;
