@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box,Typography } from "@mui/material";
 import Project from "./Project";
 
 const Projects = () =>{
@@ -17,6 +17,7 @@ const Projects = () =>{
     ]
     return (
       <Box className="bg page">
+      <Typography variant="h4" className="font"> My Works </Typography>
        {
          projects.map(project => <Project image={project.image} text={project.text} repo={project.repo} live={project.live} name={project.name}/>)
        }

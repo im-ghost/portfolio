@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, ListItemButton, ListItem, ListItemText } from '@mui/material';
+import { List, ListItemButton, ListItem, ListItemText,Typography } from '@mui/material';
 import { motion } from "framer-motion"
 const Skills = () => {
   const skills:Array<string>= [
@@ -21,6 +21,8 @@ const Skills = () => {
 
   return (
     <List className="page bg" id="skills">
+    
+      <Typography variant="h4" className="font"> My Skills</Typography>
       {skills.map((item) => (
         <ListItem key={item} disablePadding>
         <motion.div
