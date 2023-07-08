@@ -5,7 +5,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import  Typed  from "react-typed";
-import { motion, useViewportScroll, useTransform, useSpring } from 'framer-motion';
+import { motion} from 'framer-motion';
 
 const Home = () => {
   return (
