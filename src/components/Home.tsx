@@ -8,14 +8,6 @@ import  Typed  from "react-typed";
 import { motion, useViewportScroll, useTransform, useSpring } from 'framer-motion';
 
 const Home = () => {
-  const [complete, setComplete] = useState<boolean>(false);
-const handlePermission = () =>{
-  console.log(this);
-}
-  const { scrollY } = useViewportScroll();
-  const opacity = useTransform(scrollY, [0, 300], [0, 1]);
-  const translateY = useTransform(scrollY, [0, 300], [100, 0]);
-
   return (
     <Box id="#home" className="page bg">
       <motion.div
@@ -28,7 +20,7 @@ const handlePermission = () =>{
         <Typography variant="h4">
           Hi, my name is
         </Typography>
-        <Typography variant="h1">
+        <Typography variant="h1" className="font">
          <Typed
       strings={[
             "Richard",
@@ -38,7 +30,7 @@ const handlePermission = () =>{
         />
         </Typography>
      
-        <Button onClick={handlePermission}>
+        <Button>
           <Typography variant="body1">
      
               <motion.p

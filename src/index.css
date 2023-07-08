@@ -10,3 +10,6 @@
 .dark .bg{
   @apply bg-cyan-950 text-amber-500
 }
+.font{
+  font-family: 'Pacifico', cursive;
+}
