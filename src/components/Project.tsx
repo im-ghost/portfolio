@@ -1,6 +1,6 @@
 import { Paper, Typography } from "@mui/material"
 import * as React from "react"
-import { motion,useViewportScroll, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 const Project:React.FC<{
   image:string | null,
   text:string,
