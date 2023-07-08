@@ -28,8 +28,11 @@ const Home = () => {
           typeSpeed={150}
           loop
         />
+        
         </Typography>
-     
+     <Typography variant="h4">
+         I am a software engineer 
+        </Typography>
         <Button>
           <Typography variant="body1">
      
