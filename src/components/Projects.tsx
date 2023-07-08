@@ -17,7 +17,7 @@ const Projects = () =>{
     ]
     return (
       <Box className="bg page" id="projects">
-      <Typography variant="h4" className="font"> My Works </Typography>
+      <Typography variant="h4" className="font heading"> My Works </Typography>
        {
          projects.map(project => <Project image={project.image} text={project.text} repo={project.repo} live={project.live} name={project.name}/>)
        }
