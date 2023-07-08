@@ -34,7 +34,7 @@ import { SocialIcon } from "react-social-icons"
         exit ={{opacity: 0, translateY: -100 }}
         transition={{ duration: 3, delay:0.5 }}
     >
-    <Typography variant="h4" className="font">Lets Work Together</Typography>
+    <Typography variant="h4" className="font heading">Lets Work Together</Typography>
       <Box
           component="form"
           autoComplete="on"
