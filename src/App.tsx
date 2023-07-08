@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navrbar"
+import Skills from "./components/Skills"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import Likes from "./components/Likss"
+import Home from "./components/Home"
+import { Box } from "@mui/material"
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
-function App() {
+const App = () => {
+  const [showButton, setShowButton] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      setShowButton(scrollTop > 300); // Show button when scrolled down 300px
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Box className="dark">
+       <Navbar />
+     <Home />
+     <Projects />
+     <Skills />
+     <Likes />
+     <Contact/>
+      {showButton && (
+        <motion.button
+          className="back-to-top-button"
+          onClick={scrollToTop}
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0 }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          T
+        </motion.button>
+      )}
+    </Box>
   );
-}
+};
 
 export default App;
