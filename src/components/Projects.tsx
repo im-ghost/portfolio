@@ -16,7 +16,7 @@ const Projects = () =>{
     { image:"",text:"This is my portfolio. It contains my skills and projects. it was built using reactjs ,Material Ui , tailwindcss, Typescript and Framer motons",repo:"https://github.com/im-ghost/portfolio",live:"",name:"My Portfolio"},
     ]
     return (
-      <Box className="bg page">
+      <Box className="bg page" id="#projects">
       <Typography variant="h4" className="font"> My Works </Typography>
        {
          projects.map(project => <Project image={project.image} text={project.text} repo={project.repo} live={project.live} name={project.name}/>)

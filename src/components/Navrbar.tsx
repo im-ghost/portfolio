@@ -12,6 +12,7 @@ import {
   Drawer,
   Toolbar,
 } from "@mui/material";
+import { NavHashLink } from "react-router-hash-link"
 import * as React from "react"
 const drawerWidth = 240;
 const navItems = ['Home', 'About','Skills','Projects','Contact'];
@@ -34,8 +35,15 @@ const Navbar = (props:any):JSX.Element =>{
       <List className="bg">
         {navItems.map((item) => (
           <ListItem key={item} disablePadding className="bg">
-            <ListItemButton sx={{ textAlign: 'center' }} href={`#${item.toLowerCase()}`} className="bg">
+            <ListItemButton sx={{ textAlign: 'center' }} className="bg">
+            <NavHashLink
+  to={`#${item.toLowerCase()}`}
+  activeClassName="bg-red-900"
+  activeStyle={{ color: 'red' }}
+ smooth
+>
               <ListItemText className="bg" primary={item} />
+</NavHashLink>
             </ListItemButton>
           </ListItem>
         ))}

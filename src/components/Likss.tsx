@@ -18,7 +18,7 @@ const Likes = () =>{
   exit ={{opacity: 0, scale: 0 }}
   transition={{ duration: 3, delay:0.5 }}
   >
-  <Paper className="bg rounded-[50%] min-h-36 w-[90vw] m-2 flex justiy-evenly items-center">
+  <Paper className="bg rounded-[50%] min-h-36 w-[90vw] m-2 flex justify-evenly items-center">
    <motion.img src={gospel} className="bg rounded-[50%] h-24 w-24 m-2"/>
    <Typography  variant="body1">The Gospel of Christ</Typography>
   </Paper>
@@ -29,7 +29,7 @@ const Likes = () =>{
   exit ={{opacity: 0, scale: 0 }}
   transition={{ duration: 3, delay:0.5 }}
   >
-  <Paper className="bg rounded-[50%] min-h-36 w-[90vw] m-2 flex justiy-evenly items-center p-2">
+  <Paper className="bg rounded-[50%] min-h-36 w-[90vw] m-2 flex justify-evenly items-center p-2">
    <motion.img src={music} className="bg rounded-[50%] h-24 w-24 m-2"/>
    <Typography  variant="body1">Music</Typography>
   </Paper>
@@ -40,7 +40,7 @@ const Likes = () =>{
   exit ={{opacity: 0, scale: 0 }}
   transition={{ duration: 3, delay:0.5 }}
   >
-  <Paper className="bg rounded-[50%] min-h-36 w-[90vw] m-2 p-2 flex justiy-evenly items-center">
+  <Paper className="bg rounded-[50%] min-h-36 w-[90vw] m-2 p-2 flex justify-evenly items-center">
    <motion.img src={fun} className=" bg rounded-[50%] h-24 w-24 m-2"/>
    <Typography  variant="body1"> Having fun</Typography>
   </Paper>
@@ -51,7 +51,7 @@ const Likes = () =>{
   exit ={{opacity: 0, scale: 0 }}
   transition={{ duration: 3, delay:0.5 }}
   >
-  <Paper className="bg rounded-[50%] min-h-36 w-[90vw] m-2 flex justiy-evenly items-center p-2">
+  <Paper className="bg rounded-[50%] min-h-36 w-[90vw] m-2 flex justify-evenly items-center p-2">
    <motion.img src={coding} className="bg rounded-[50%] h-24 w-24 m-2"/>
    <Typography  variant="body1"> Coding</Typography>
   </Paper>
