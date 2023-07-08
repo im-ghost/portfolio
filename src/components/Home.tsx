@@ -30,10 +30,10 @@ const Home = () => {
         />
         
         </Typography>
-     <Typography variant="h4">
+     <Typography variant="body2">
          I am a software engineer 
         </Typography>
-        <Button>
+        <Button href="/#contact">
           <Typography variant="body1">
      
               <motion.p
