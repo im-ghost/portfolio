@@ -96,9 +96,9 @@ import { SocialIcon } from "react-social-icons"
          
         </Button>
          <Typography variant="h6">{res}</Typography>
-    	<Box className="flex space-evenly w-screen bg">
+    	<Box className="flex space-evenly bg w-screen h-36 m-2 justify-evenly">
 			
-						<SocialIcon url= "https://wa.me/+2349152694711?text=Hello%20Richard!%20I'm%20interested%20in%20working%20with%you."/>
+						<SocialIcon url= "https://wa.me/+2349152694711?text=Hello%20Richard!%20I'm%20interested%20in%20working%20with%you." network="whatsapp"/>
 						<SocialIcon	url= "mailto:culestfrosh@gmail.com?subject=I'd Love to Work with You!"/>
 						<SocialIcon url= "https://www.linkedin.com/in/me/"/>
 						<SocialIcon	url= "https://twitter.com/__richies__"/>
