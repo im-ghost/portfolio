@@ -9,7 +9,7 @@ import { motion} from 'framer-motion';
 
 const Home = () => {
   return (
-    <Box id="#home" className="page bg">
+    <Box id="home" className="page bg">
       <motion.div
         className="animated-element"
         initial={{ opacity: 0, translateY: -100}}
