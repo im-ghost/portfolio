@@ -11,7 +11,7 @@ import  coding from "../images/code.jpeg"
 const Likes = () =>{
   return(
     <Box className="page bg" id="likes">
-    <Typography variant="h4" className="font"> I like </Typography>
+    <Typography variant="h4" className="font heading"> I like </Typography>
       <motion.div
   initial={{ opacity: 0, scale: 0}}
   whileInView={{ opacity: 1,scale:1 }}
