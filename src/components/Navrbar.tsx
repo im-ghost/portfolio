@@ -38,9 +38,6 @@ const Navbar = (props:any):JSX.Element =>{
             <ListItemButton sx={{ textAlign: 'center' }} className="bg">
             <NavHashLink
   to={`#${item.toLowerCase()}`}
-  activeClassName="bg-red-900"
-  activeStyle={{ color: 'red' }}
- smooth
 >
               <ListItemText className="bg" primary={item} />
 </NavHashLink>
